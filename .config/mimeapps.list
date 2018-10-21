@@ -1,0 +1,14 @@
+[Added Associations]
+image/jpeg=feh.desktop;
+image/svg+xml=org.gnome.gedit.desktop;google-chrome.desktop;
+image/png=zzz-gimp.desktop;
+video/mp4=vlc.desktop;
+application/pdf=zzz-gimp.desktop;
+application/dicom=feh.desktop;
+image/x-gimp-gbr=zzz-gimp.desktop;
+text/x-arduino=org.gnome.gedit.desktop;
+video/quicktime=vlc.desktop;
+application/x-ms-dos-executable=wine.desktop;
+image/gif=google-chrome.desktop;pinta.desktop;feh.desktop;wine-extension-gif.desktop;
+text/html=jetbrains-idea-ce.desktop;google-chrome.desktop;
+text/csv=wine-extension-txt.desktop;
