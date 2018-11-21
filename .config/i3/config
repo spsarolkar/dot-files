@@ -8,10 +8,12 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+set $TERMINAL termite
 
 set $mod Mod4
 
-set $term --no-startup-id urxvt
+#set $term --no-startup-id urxvt
+set $term --no-startup-id termite
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,7 +34,8 @@ font pango:System San Francisco Display 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $TERMINAL
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,8 +45,8 @@ set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
-set $rofi-background	 #3e4b63
-set $rofi-text	 	 #2f343
+#set $rofi-background	 #3e4b63
+#set $rofi-text	 	 #2f343
 
 set $volume_command=/usr/libexec/i3blocks/volume
 
@@ -51,6 +54,7 @@ set $volume_command=/usr/libexec/i3blocks/volume
 #bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$rofi-background" -bg "$rofi-background" -fg "$text-color" -hlbg "$bg-color" -hlfg "$rofi-background" -font "System San Francisco Display 18"
 bindsym $mod+d exec rofi -show drun -lines 5 -eh 1 -bw 0 -bc -width 100 -padding 800 -font "System San Francisco Display 15"
+#bindsym $mod+d exec rofi -show drun -lines 5 -eh 1 -bw 0 -bc -font "System San Francisco Display 15"
 bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -run-command 'gksudo {cmd}'"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -212,7 +216,8 @@ bar {
 
 #bindsym $mod+shift+x exec i3lock
 bindsym $mod+shift+x exec "~/.config/i3/lock.sh ~/.config/i3/screenlock.png"
-exec urxvt
+#exec urxvt
+exec termite
 
 exec_always feh --bg-scale /home/sunils/.screenlayout/wallpaper.jpg
 exec compton -f

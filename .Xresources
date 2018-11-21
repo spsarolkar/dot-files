@@ -1,0 +1,115 @@
+URxvt*termName: rxvt-unicode
+
+
+! special 
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black 
+*.color0:       #2e3436 
+*.color8:       #555753 
+
+! red 
+*.color1:       #a31604 
+*.color9:       #c60001 
+
+! green 
+*.color2:       #447241 
+*.color10:      #27a343 
+
+! yellow 
+*.color3:       #c1951a 
+*.color11:      #d5a30e 
+
+! blue 
+*.color4:       #425387 
+*.color12:      #4a5a8d 
+
+! magenta 
+*.color5:       #965d98 
+*.color13:      #893c8c 
+
+! cyan 
+*.color6:       #06989a 
+*.color14:      #12bccb 
+
+! white 
+*.color7:       #d3d7cf 
+*.color15:      #eeeeec 
+
+URxvt*scrollBar:         false 
+URxvt*scrollBar_right:   false 
+
+URxvt.transparent:  false 
+!URxvt.tintColor:     white
+URxvt.shading:       50
+
+URxvt*depth: 32 
+URxvt.background: [70]#212020 
+
+!*background: #0f0f0f
+!*foreground: #c8c8c8
+
+!URxvt.font: xft:UbuntuMono Nerd Font:style=Regular:pixelsize=14 
+!URxvt.font: xft:SourceCodePro+Powerline+Awesome Regular:pixelsize=14 
+!URxvt.font: xft:Knack Nerd Font:style=Regular:pixelsize=14 
+!URxvt.boldFont: xft:Knack Nerd Font:style=Bold:pixelsize=14 
+!URxvt.font: xft:InconsolataForPowerline Nerd Font:style=Medium:pixelsize=17 
+!URxvt.letterSpace: -2 
+!
+URxvt*font:           xft:Inconsolatazi4:pixelsize=16:xft:DejaVu Sans Mono for Powerline:size=12:antialias=true:hinting=true,xft:Liberation Mono:size:13:antialias=true:hinting=true,\
+            xft:Source Code Pro:pixelsize=18:style=medium:antialias=true,xft:FontAwesome:size:8,\
+            -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*,xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+!URxvt.font: 		xft:monospace:size=11
+
+!-*- Perl extensions -*-
+URxvt.perl-ext-common: default,selection-to-clipboard,pasta,matcher,resize-font
+!URxvt.url-launcher: /usr/bin/xdg-open 
+URxvt.underlineURLs:  True
+!
+!Pasta
+URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+! URxvt.keysym.Control-Shift-C:     perl:pasta:copy
+! Comment this if you don't want copy when text is selected
+URxvt.clipboard.autocopy: true
+
+URxvt.colorUL:		#4682B4
+
+!! Matcher
+URxvt.matcher.button: 1
+!
+!! matcher -url
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-select.launcher: webview
+URxvt.url-select.underline: true
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.matcher.rend.0: Uline Bold fg5
+
+!! keyboard-select:
+!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+
+
+*antialias:  true 
+*autohint:   true 
+
+URxvt.cursorBlink: 1 
+!URxvt.cursorUnderline: 1 
+URxvt.urgentOnBell:  true 
+
+URxvt.internalBorder: 0 
+URxvt.externalBorder: 0
+
+
+! State:           'bg',            'fg',            'bgalt',           'hlbg',       'hlfg'
+rofi.color-normal: argb:a1424647, argb:ee9a9d9e, argb:a1535759, argb:a1f4ffb2, argb:a1292d03
+rofi.color-urgent: argb:a1424647, argb:a1021026, argb:a1656b6d, argb:a1f4ffb2, argb:a14f3104
+rofi.color-active: argb:0f424647, argb:0f9a9d9e, argb:0f656b6d, argb:a14f3104, argb:a1211401
+
+!                  'background', 'border', 'separator'
+rofi.color-window: argb:a2424647,      #002b36,  #002b36
+
